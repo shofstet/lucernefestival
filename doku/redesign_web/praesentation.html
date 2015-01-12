@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="../reveal.js/css/theme/simple.css" id="theme">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="../reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section class="slide level2">
+
+<!-- Editor Stefan Hofstetter -->
+</section>
+<section><section id="kickoff-redesign-web" class="titleslide slide level1"><h1>Kickoff redesign Web</h1></section><section class="slide level2">
+
+</section></section>
+<section><section id="lf-ticket-webshop" class="titleslide slide level1"><h1>LF Ticket Webshop</h1></section><section id="inhalt" class="slide level2">
+<h1>Inhalt</h1>
+<ul>
+<li>Systemaufbau</li>
+<li>Komplexität Schnittstellen</li>
+<li>Anforderungen</li>
+<li>Vorschlag Architektur</li>
+<li>Testing</li>
+</ul>
+</section><section id="systemaufbau" class="slide level2">
+<h1>Systemaufbau</h1>
+<h3 id="übersicht-interne-systeme-und-schnittstellen">Übersicht interne Systeme und Schnittstellen</h3>
+<figure>
+<img src="interne_schnittstellen_systemuebersicht.png" alt="interne Systeme" /><figcaption>interne Systeme</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<h3 id="systemaufbau-webshop-bisher">Systemaufbau Webshop bisher</h3>
+<figure>
+<img src="systemaufbau_bisher.png" alt="Systemaufbau bisher" /><figcaption>Systemaufbau bisher</figcaption>
+</figure>
+</section><section id="anforderungen" class="slide level2">
+<h1>Anforderungen</h1>
+<ul>
+<li>Ist-Stand</li>
+<li>Excel</li>
+<li>Neue Anforderungen und Verbesserungen</li>
+</ul>
+</section><section id="komplexität-schnittstellen" class="slide level2">
+<h1>Komplexität Schnittstellen</h1>
+<p>Anhand des Use Cases von 2011 wird die Schnittstelle zwischen Webshop und Kreditkarteservice erklärt.</p>
+<figure>
+<img src="Systeme_beim_Ticketkauf_Online.png" alt="Systeme beim Ticketkauf" /><figcaption>Systeme beim Ticketkauf</figcaption>
+</figure>
+</section><section id="testing" class="slide level2">
+<h1>Testing</h1>
+<ul>
+<li>Unittest</li>
+<li>Lasttest mit Apache JMeter</li>
+<li>Automatisierte Fronttest mit Selenium</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: 'moon', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: '../reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: '../reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
+</html>

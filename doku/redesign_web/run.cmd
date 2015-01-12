@@ -1,0 +1,1 @@
+pandoc -s -V revealjs-url:../reveal.js technische_aspekte_redesign.md -t revealjs -o praesentation.html --slide-level=2 -V theme=moon
