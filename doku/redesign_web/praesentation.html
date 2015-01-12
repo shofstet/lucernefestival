@@ -29,30 +29,41 @@
     <div class="slides">
 
 
-<section class="slide level2">
-
-<!-- Editor Stefan Hofstetter -->
-</section>
-<section><section id="kickoff-redesign-web" class="titleslide slide level1"><h1>Kickoff redesign Web</h1></section><section class="slide level2">
-
-</section></section>
-<section><section id="lf-ticket-webshop" class="titleslide slide level1"><h1>LF Ticket Webshop</h1></section><section id="inhalt" class="slide level2">
+<section><section id="kickoff-redesign-web" class="titleslide slide level1"><h1>Kickoff redesign Web</h1></section><section id="inhalt" class="slide level2">
 <h1>Inhalt</h1>
+<ul>
+<li>Allgemein technische Tools und Specs</li>
+<li>LF Ticket Webshop
 <ul>
 <li>Systemaufbau</li>
 <li>Komplexität Schnittstellen</li>
 <li>Anforderungen</li>
 <li>Vorschlag Architektur</li>
 <li>Testing</li>
+<li>Daten CMS bisher</li>
+</ul></li>
 </ul>
-</section><section id="systemaufbau" class="slide level2">
+</section></section>
+<section><section id="allgemeine-technische-tools-und-specs" class="titleslide slide level1"><h1>Allgemeine technische Tools und Specs</h1></section><section id="tools-und-versionen" class="slide level2">
+<h1>Tools und Versionen</h1>
+<ul>
+<li>Python 3.4?</li>
+<li>Django 1.7?</li>
+<li>Datenbank MySQL/InnoDB oder Postgres?</li>
+<li>Entwicklungsumgebung? z. B. pyCharm</li>
+<li>CI Continous Integration Server z. k. Jenkins oder</li>
+<li>CD Continous Delivery Server wie z. B. Wercker?</li>
+<li>sentry (logging Plattform?)</li>
+<li>Webserver: Apache, gunicorn?, nginx static</li>
+<li>Hosting: Amazon EC2, RDS</li>
+</ul>
+</section></section>
+<section><section id="lf-ticket-webshop" class="titleslide slide level1"><h1>LF Ticket Webshop</h1></section><section id="systemaufbau" class="slide level2">
 <h1>Systemaufbau</h1>
 <h3 id="übersicht-interne-systeme-und-schnittstellen">Übersicht interne Systeme und Schnittstellen</h3>
 <figure>
 <img src="interne_schnittstellen_systemuebersicht.png" alt="interne Systeme" /><figcaption>interne Systeme</figcaption>
 </figure>
-</section><section class="slide level2">
-
 <h3 id="systemaufbau-webshop-bisher">Systemaufbau Webshop bisher</h3>
 <figure>
 <img src="systemaufbau_bisher.png" alt="Systemaufbau bisher" /><figcaption>Systemaufbau bisher</figcaption>
@@ -70,12 +81,24 @@
 <figure>
 <img src="Systeme_beim_Ticketkauf_Online.png" alt="Systeme beim Ticketkauf" /><figcaption>Systeme beim Ticketkauf</figcaption>
 </figure>
-</section><section id="testing" class="slide level2">
-<h1>Testing</h1>
+</section><section id="testing-webshop" class="slide level2">
+<h1>Testing Webshop</h1>
 <ul>
 <li>Unittest</li>
 <li>Lasttest mit Apache JMeter</li>
-<li>Automatisierte Fronttest mit Selenium</li>
+<li>Automatisierte Functionale Tests mit Selenium Beispiel</li>
+</ul>
+</section><section id="daten-cms-erm-bisher" class="slide level2">
+<h1>Daten CMS ERM bisher</h1>
+<p><a href="CMS_LF_ER_Modell.pdf">ERM</a></p>
+<ul>
+<li>Sprachkonzept via tblTexts und</li>
+</ul>
+</section><section id="verbesserungen-zum-alten-modell" class="slide level2">
+<h1>Verbesserungen zum alten Modell</h1>
+<ul>
+<li>tblComposer, tblConductors und tblPerformers sind einzelne Tabellen mit Personen, nun gibt es aber Personen welche Dirigent, Komponist und Künstler/Musiker sind, diese müssen im jetzigen Modell mehrmals erfasst werden.</li>
+<li>tblEnsemble kann mit Performars bestück werden. Evtl. sollte man tblChoir mit einer ähnlichen Funktion ausstatten, oder man verallgemeinert eine Gruppenhierarchie und typsiert die Gruppen...</li>
 </ul>
 </section></section>
     </div>
@@ -94,7 +117,7 @@
         progress: true,
         history: true,
         center: true,
-        theme: 'moon', // available themes are in /css/theme
+        theme: 'sky', // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
         // Optional libraries used to extend on reveal.js
