@@ -51,5 +51,7 @@ Anhand des Use Cases von 2011 wird die Schnittstelle zwischen Webshop und Kredit
 - Sphinx documentation?
 
 
-
-
+### weitere Inputs
+- webcomponents
+- JavaScript Frameworks
+- async Technologie für Sitzplatzstatus wie asyncio oder nodejs
