@@ -47,7 +47,8 @@ Anhand des Use Cases von 2011 wird die Schnittstelle zwischen Webshop und Kredit
 - Unittest 
 - Lasttest mit Apache JMeter
 - Automatisierte Fronttest mit Selenium
-
+- doctest?
+- Sphinx documentation?
 
 
 
