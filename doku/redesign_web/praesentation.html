@@ -35,11 +35,12 @@
 <li>Allgemein technische Tools und Specs</li>
 <li>LF Ticket Webshop
 <ul>
-<li>Systemaufbau</li>
+<li>Übersicht interne Systeme</li>
+<li>Systemaufbau (alt/neu)</li>
 <li>Komplexität Schnittstellen</li>
 <li>Anforderungen</li>
 <li>Vorschlag Architektur</li>
-<li>Testing</li>
+<li>Testing / Umgebungen</li>
 <li>Daten CMS bisher</li>
 </ul></li>
 </ul>
@@ -47,8 +48,9 @@
 <section><section id="allgemeine-technische-tools-und-specs" class="titleslide slide level1"><h1>Allgemeine technische Tools und Specs</h1></section><section id="tools-und-versionen" class="slide level2">
 <h1>Tools und Versionen</h1>
 <ul>
-<li>Python 3.4?</li>
+<li>Python 3 (.4)?</li>
 <li>Django 1.7?</li>
+<li>github.com</li>
 <li>Datenbank MySQL/InnoDB oder Postgres?</li>
 <li>Entwicklungsumgebung? z. B. pyCharm</li>
 <li>CI Continous Integration Server z. k. Jenkins oder</li>
@@ -56,15 +58,18 @@
 <li>sentry (logging Plattform?)</li>
 <li>Webserver: Apache, gunicorn?, nginx static</li>
 <li>Hosting: Amazon EC2, RDS</li>
+<li>JavaScript Frameworks</li>
+<li>webcomponents</li>
+<li>async Technologie für Sitzplatzstatus wie asyncio oder nodejs</li>
 </ul>
 </section></section>
-<section><section id="lf-ticket-webshop" class="titleslide slide level1"><h1>LF Ticket Webshop</h1></section><section id="systemaufbau" class="slide level2">
-<h1>Systemaufbau</h1>
-<h3 id="übersicht-interne-systeme-und-schnittstellen">Übersicht interne Systeme und Schnittstellen</h3>
+<section><section id="lf-ticket-webshop" class="titleslide slide level1"><h1>LF Ticket Webshop</h1></section><section id="übersicht-interne-systeme-und-schnittstellen" class="slide level2">
+<h1>Übersicht interne Systeme und Schnittstellen</h1>
 <figure>
 <img src="interne_schnittstellen_systemuebersicht.png" alt="interne Systeme" /><figcaption>interne Systeme</figcaption>
 </figure>
-<h3 id="systemaufbau-webshop-bisher">Systemaufbau Webshop bisher</h3>
+</section><section id="systemaufbau-webshop-bisher" class="slide level2">
+<h1>Systemaufbau Webshop bisher</h1>
 <figure>
 <img src="systemaufbau_bisher.png" alt="Systemaufbau bisher" /><figcaption>Systemaufbau bisher</figcaption>
 </figure>
@@ -87,12 +92,15 @@
 <li>Unittest</li>
 <li>Lasttest mit Apache JMeter</li>
 <li>Automatisierte Functionale Tests mit Selenium Beispiel</li>
+<li>Umgebungen Test, Integration (master), Live</li>
+<li>doctest?</li>
+<li>Sphinx documentation?</li>
 </ul>
 </section><section id="daten-cms-erm-bisher" class="slide level2">
 <h1>Daten CMS ERM bisher</h1>
 <p><a href="CMS_LF_ER_Modell.pdf">ERM</a></p>
 <ul>
-<li>Sprachkonzept via tblTexts und</li>
+<li>Sprachkonzept via tblTexts, tblEntityTypes und tblLanguages</li>
 </ul>
 </section><section id="verbesserungen-zum-alten-modell" class="slide level2">
 <h1>Verbesserungen zum alten Modell</h1>
