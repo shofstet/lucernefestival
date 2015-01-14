@@ -32,24 +32,25 @@
 <section><section id="kickoff-redesign-web" class="titleslide slide level1"><h1>Kickoff redesign Web</h1></section><section id="inhalt" class="slide level2">
 <h1>Inhalt</h1>
 <ul>
-<li>Allgemein technische Tools und Specs</li>
+<li>Allgemein technische Tools und Specs
+<ul>
+<li>Daten CMS bisher</li>
+</ul></li>
 <li>LF Ticket Webshop
 <ul>
 <li>Übersicht interne Systeme</li>
-<li>Systemaufbau (alt/neu)</li>
+<li>Systemaufbau (alt/neu Vorschlag)</li>
 <li>Komplexität Schnittstellen</li>
-<li>Anforderungen</li>
-<li>Vorschlag Architektur</li>
+<li>Demo JTPVerkauf / Webshop alt / Gateway-Log auf DB</li>
 <li>Testing / Umgebungen</li>
-<li>Daten CMS bisher</li>
 </ul></li>
+<li>evtl. Anforderungen</li>
 </ul>
 </section></section>
 <section><section id="allgemeine-technische-tools-und-specs" class="titleslide slide level1"><h1>Allgemeine technische Tools und Specs</h1></section><section id="tools-und-versionen" class="slide level2">
 <h1>Tools und Versionen</h1>
 <ul>
-<li>Python 3 (.4)?</li>
-<li>Django 1.7?</li>
+<li>Python 3 (.4)? / Django 1.7?</li>
 <li>github.com</li>
 <li>Datenbank MySQL/InnoDB oder Postgres?</li>
 <li>Entwicklungsumgebung? z. B. pyCharm</li>
@@ -58,43 +59,11 @@
 <li>sentry (logging Plattform?)</li>
 <li>Webserver: Apache, gunicorn?, nginx static</li>
 <li>Hosting: Amazon EC2, RDS</li>
-<li>JavaScript Frameworks</li>
+<li>JavaScript Frameworks (AngularJS?)</li>
 <li>webcomponents</li>
 <li>async Technologie für Sitzplatzstatus wie asyncio oder nodejs</li>
-</ul>
-</section></section>
-<section><section id="lf-ticket-webshop" class="titleslide slide level1"><h1>LF Ticket Webshop</h1></section><section id="übersicht-interne-systeme-und-schnittstellen" class="slide level2">
-<h1>Übersicht interne Systeme und Schnittstellen</h1>
-<figure>
-<img src="interne_schnittstellen_systemuebersicht.png" alt="interne Systeme" /><figcaption>interne Systeme</figcaption>
-</figure>
-</section><section id="systemaufbau-webshop-bisher" class="slide level2">
-<h1>Systemaufbau Webshop bisher</h1>
-<figure>
-<img src="systemaufbau_bisher.png" alt="Systemaufbau bisher" /><figcaption>Systemaufbau bisher</figcaption>
-</figure>
-</section><section id="anforderungen" class="slide level2">
-<h1>Anforderungen</h1>
-<ul>
-<li>Ist-Stand</li>
-<li>Excel</li>
-<li>Neue Anforderungen und Verbesserungen</li>
-</ul>
-</section><section id="komplexität-schnittstellen" class="slide level2">
-<h1>Komplexität Schnittstellen</h1>
-<p>Anhand des Use Cases von 2011 wird die Schnittstelle zwischen Webshop und Kreditkarteservice erklärt.</p>
-<figure>
-<img src="Systeme_beim_Ticketkauf_Online.png" alt="Systeme beim Ticketkauf" /><figcaption>Systeme beim Ticketkauf</figcaption>
-</figure>
-</section><section id="testing-webshop" class="slide level2">
-<h1>Testing Webshop</h1>
-<ul>
-<li>Unittest</li>
-<li>Lasttest mit Apache JMeter</li>
-<li>Automatisierte Functionale Tests mit Selenium Beispiel</li>
-<li>Umgebungen Test, Integration (master), Live</li>
-<li>doctest?</li>
 <li>Sphinx documentation?</li>
+<li><a href="#/testing-webshop">Testing Webshop</a></li>
 </ul>
 </section><section id="daten-cms-erm-bisher" class="slide level2">
 <h1>Daten CMS ERM bisher</h1>
@@ -109,6 +78,47 @@
 <li>tblEnsemble kann mit Performars bestück werden. Evtl. sollte man tblChoir mit einer ähnlichen Funktion ausstatten, oder man verallgemeinert eine Gruppenhierarchie und typsiert die Gruppen...</li>
 </ul>
 </section></section>
+<section><section id="lf-ticket-webshop" class="titleslide slide level1"><h1>LF Ticket Webshop</h1></section><section id="übersicht-interne-systeme-und-schnittstellen" class="slide level2">
+<h1>Übersicht interne Systeme und Schnittstellen</h1>
+<figure>
+<img src="interne_schnittstellen_systemuebersicht.png" alt="interne Systeme" /><figcaption>interne Systeme</figcaption>
+</figure>
+</section><section id="systemaufbau-webshop-bisher" class="slide level2">
+<h1>Systemaufbau Webshop bisher</h1>
+<figure>
+<img src="systemaufbau_bisher.png" alt="Systemaufbau bisher" /><figcaption>Systemaufbau bisher</figcaption>
+</figure>
+</section><section id="systemaufbau-webshop-neu" class="slide level2">
+<h1>Systemaufbau Webshop neu</h1>
+<figure>
+<img src="systemaufbau_neu.png" alt="Systemaufbau neu" /><figcaption>Systemaufbau neu</figcaption>
+</figure>
+</section><section id="komplexität-schnittstellen" class="slide level2">
+<h1>Komplexität Schnittstellen</h1>
+<p>Anhand des Use Cases von 2011 wird die Schnittstelle zwischen Webshop und Kreditkarteservice erklärt.</p>
+<figure>
+<img src="Systeme_beim_Ticketkauf_Online.png" alt="Systeme beim Ticketkauf" /><figcaption>Systeme beim Ticketkauf</figcaption>
+</figure>
+</section><section id="demo" class="slide level2">
+<h1>Demo</h1>
+<ul>
+<li>JTPVerkauf</li>
+<li>Webshop alt</li>
+<li>Gateway-Log (SQL)</li>
+<li>JTPSystemsteuerung</li>
+<li>Python Code via WSDL/Soap</li>
+</ul>
+</section><section id="testing-webshop" class="slide level2">
+<h1>Testing Webshop</h1>
+<ul>
+<li>Unittest</li>
+<li>Lasttest mit Apache JMeter</li>
+<li>Automatisierte Functionale Tests mit Selenium Beispiel</li>
+<li>Umgebungen Test, Integration (master), Live</li>
+<li>doctest?</li>
+</ul>
+</section></section>
+<section><section id="anforderungen" class="titleslide slide level1"><h1>Anforderungen</h1></section></section>
     </div>
   </div>
 
