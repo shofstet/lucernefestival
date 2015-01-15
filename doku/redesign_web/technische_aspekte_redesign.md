@@ -1,4 +1,5 @@
-# Kickoff redesign Web
+# Kickoff redesign Web <br /> 3. Teil Technischer Aspekte
+
 
 ## Inhalt
 - Allgemein technische Tools und Specs
@@ -54,9 +55,11 @@ In diesem Dokument sollen die wichtigsten Aspekte für die Implementation des We
 
 ## Wichtige Punkte
 - Caching, wo und wie?
+- evtl. Implementierung als Django Middelware?
+- evtl. aufbauend auf django-shop von divio?
 - Auswechselbare Systeme
 - Seatpicker (Status) asynchron?
-- Schnittstellen Kontrolle und aktive Meldungen
+- Schnittstellen Kontrolle und aktive Meldungen (System Check Framework New in Django 1.7)
 
 ## Komplexität Schnittstellen ##
 Anhand des Use Cases von 2011 wird die Schnittstelle zwischen Webshop und Kreditkarteservice erklärt.

@@ -29,7 +29,7 @@
     <div class="slides">
 
 
-<section><section id="kickoff-redesign-web" class="titleslide slide level1"><h1>Kickoff redesign Web</h1></section><section id="inhalt" class="slide level2">
+<section><section id="kickoff-redesign-web-3.-teil-technischer-aspekte" class="titleslide slide level1"><h1>Kickoff redesign Web <br /> 3. Teil Technischer Aspekte</h1></section><section id="inhalt" class="slide level2">
 <h1>Inhalt</h1>
 <ul>
 <li>Allgemein technische Tools und Specs
@@ -53,12 +53,12 @@
 <li>Python 3 (.4)? / Django 1.7?</li>
 <li>github.com</li>
 <li>Datenbank MySQL/InnoDB oder Postgres?</li>
-<li>Entwicklungsumgebung? z. B. pyCharm</li>
+<li>Entwicklungsumgebung(en)? z. B. pyCharm</li>
 <li>CI Continous Integration Server z. k. Jenkins oder</li>
 <li>CD Continous Delivery Server wie z. B. Wercker?</li>
 <li>sentry (logging Plattform?)</li>
 <li>Webserver: Apache, gunicorn?, nginx static</li>
-<li>Hosting: Amazon EC2, RDS</li>
+<li>Hosting: Amazon EC2, RDS oder ihr Vorschlag</li>
 <li>JavaScript Frameworks (AngularJS?)</li>
 <li>webcomponents</li>
 <li>async Technologie für Sitzplatzstatus wie asyncio oder nodejs</li>
@@ -93,6 +93,16 @@
 <figure>
 <img src="systemaufbau_neu.png" alt="Systemaufbau neu" /><figcaption>Systemaufbau neu</figcaption>
 </figure>
+</section><section id="wichtige-punkte" class="slide level2">
+<h1>Wichtige Punkte</h1>
+<ul>
+<li>Caching, wo und wie?</li>
+<li>evtl. Implementierung als Django Middelware?</li>
+<li>evtl. aufbauend auf django-shop von divio?</li>
+<li>Auswechselbare Systeme</li>
+<li>Seatpicker (Status) asynchron?</li>
+<li>Schnittstellen Kontrolle und aktive Meldungen (System Check Framework New in Django 1.7)</li>
+</ul>
 </section><section id="komplexität-schnittstellen" class="slide level2">
 <h1>Komplexität Schnittstellen</h1>
 <p>Anhand des Use Cases von 2011 wird die Schnittstelle zwischen Webshop und Kreditkarteservice erklärt.</p>
